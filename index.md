@@ -221,12 +221,10 @@ La buena costumbre de realizar pruebas de escritorio es el pilar de la formació
 
 ## Bibliografía.
 
-[1] G. L. López Faicán, "Guía Didáctica de Teoría de la Programación", Universidad Nacional de Loja, Loja, Ecuador, 2026.
-
-[2] PSeInt, "Documentación oficial de PSeInt," 2021. [En línea]. Disponible en:
+[1] PSeInt, "Documentación oficial de PSeInt," 2021. [En línea]. Disponible en:
 http://pseint.sourceforge.net/
 
-[3] Microsoft, "Visual Studio Code," v. 1.118, 2026. [En línea]. Disponible en: https://code.visualstudio.com/.
+[2] Microsoft, "Visual Studio Code," v. 1.118, 2026. [En línea]. Disponible en: https://code.visualstudio.com/.
 
  ## Declaración de uso de la IA generativa
  Para la elaboración de este portafolio, se utilizó la Inteligencia Artificial como una erramienta de tipo Tutor de acompañamiento.
