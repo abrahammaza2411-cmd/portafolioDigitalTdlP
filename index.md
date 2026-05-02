@@ -1,3 +1,6 @@
+<div align="center">
+<img src= "https://redi.cedia.edu.ec/members/UNL.png" width= "230px"> <br>
+
 # **Portafolio Digital de Aprendizaje – Teoría de la Programación**
 ### **Universidad Nacional De Loja**
 ### **Facultad de la Energía, las Industrias y los Recursos Naturales no Renovables**
@@ -7,6 +10,8 @@
 ### **Estudiante: Abraham Daniel Maza Lapo**
 ### **Primer Ciclo**
 ### **Período académico Marzo - Agosto 2026**
+</div> <br>
+
 ## **Unidad 1**
 
 ### **Resolucion de Problemas**
@@ -17,6 +22,9 @@ Resolver un problema real mediante la informática requiere seguir estos pasos:
   3. Codificación (traducción a código fuente), 
   4. Pruebas (eliminacion de errores) y 
   5. Documentación/Mantenimiento
+
+
+
 
 ### **1. Conceptos fundamentales**
 
