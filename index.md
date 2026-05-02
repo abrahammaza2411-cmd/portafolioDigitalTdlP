@@ -14,7 +14,7 @@
 
 ## **Unidad 1**
 
-### **Resolucion de Problemas**
+### **Resolución de Problemas**
 
 Resolver un problema real mediante la informática requiere seguir estos pasos: 
   1. Análisis (identificar entradas, salidas y restricciones).
