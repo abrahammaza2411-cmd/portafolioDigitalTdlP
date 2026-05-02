@@ -135,9 +135,9 @@ definir costoEquipoM, costoEquipoT Como Real;
 definir subtotalMensajeriaExpress, subtotalTransporteDeCarga, subtotalCorreoConvencional, total Como Real;
 	
 //Datos de entrada
-Escribir "cual es el costo unitario del equipo enviado por Mensajeria Express";<br>
+Escribir "cual es el costo unitario del equipo enviado por Mensajeria Express";
 leer costoEquipoM;
-escribir "cual es el costo unitario del equipo enviado por Transporte de carga";<br>
+escribir "cual es el costo unitario del equipo enviado por Transporte de carga";
 leer costoEquipoT;
 	
 //Proceso<br>
@@ -189,7 +189,7 @@ int main(){
   printf ("El costo de los equipos enviados por Correo convencional sera $%.2f.\n", subtotalCorreoConvencional);
   printf ("El costo total de los equipos enviados sera $%.2f.", total);
     
-  return 0;<br>
+  return 0;
 }
 ```
 #### **Validación**
