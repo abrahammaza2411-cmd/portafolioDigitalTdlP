@@ -8,7 +8,7 @@
 ### **Primer Ciclo**
 ### **Período académico Marzo - Agosto 2026**
 ## **Unidad 1**
-  <!--Contenidos-->
+
 ### **Resolucion de Problemas**
 
 Resolver un problema real mediante la informática requiere seguir estos pasos: 
@@ -18,7 +18,7 @@ Resolver un problema real mediante la informática requiere seguir estos pasos:
   4. Pruebas (eliminacion de errores) y 
   5. Documentación/Mantenimiento
 
-### **a) Conceptos fundamentales**
+### **1. Conceptos fundamentales**
 
 #### **a. Algoritmo**
 Es una secuencia de pasos establecidos, lógicamente ordenados que dan solución a un problema. Deben ser precisos (orden claro sin ambigüedades), definidos (mismo resultado ante mismas entradas) y finitos (deben concluir).
@@ -73,9 +73,144 @@ Mas cercano al lenguaje natural, existen 2 tipos, los compilados (que generan un
 #### **f. Programación por bloques**
 Es un metodo visual para crear software mediante piezas grafias (bloques) que cumplen cierto comando o funcion, es principalmente utilizado para enseñar a principiantes y niños, porque permite aprender lógica sin escribir sintaxis compleja.
 
-## **2. Ejercicio con estructura secuencial**
 
 
-## Unidad 2
 
-## Unidad 3
+
+
+
+
+
+
+### **2. Ejercicio con estructura secuencial**
+#### **Planteamiento de problema**<br>
+Un lote de 10 equipos debe enviarse a diferentes sectores.
+- 4 equipos se enviarán por Mensajería Express.
+- 2 equipos por Transporte de Carga.
+- Los 4 restantes se enviarán por Correo Convencional, el cual cuesta un 30% menos que la Mensajería Express.
+- El programa debe solicitar el costo de la Mensajería Express y el Transporte de Carga para calcular el costo total del envío de los 10 equipos.
+
+#### **Análisis del problema**<br>
+Necesitamos calcular el costo total de envío de un lote de 10 equipos distribuidos en 3 modalidades de transporte, considerando que una tiene un costo con descuento respecto a otra.
+
+**Tipos de datos:**<br>
+la cantidad de equipos son **constantes.**
+los costos, subtotales y el total son **variables de tipo Real.**
+
+**Entradas:**<br>
+- Costo unitario por Mensajería Express
+- Costo unitario por Transporte de Carga
+
+**Proceso:**<br>
+Calcular los subtotales multiplicando el costo por la cantidad respectiva, como: costoEquipo1 x cantidad1 = Subtotal1
+Calcular el total sumando los subtotales, tal que: total= Subtotal1 + Subtotal2 + Subtotal3
+
+**Salidas:**<br>
+- Subtotal por Mensajería Express.
+- Subtotal por Transporte de Carga.
+- Subtotal por Correo Convencional.
+- Costo Total General.
+#### **Diseño del algoritmo**
+**Diagrama de flujo**<br>
+![presupuestoEnvio](image-1.png) <br>
+
+**Pseudocódigo**<!--Los saltos de linea (<br>) no estan incluidos en elpseudocodigo, son para mejorar la redaccion en el producto final-->
+
+Algoritmo presupuestoEnvio<br>
+//Def variables<br>
+definir costoEquipoM, costoEquipoT Como Real;<br>
+definir subtotalMensajeriaExpress, subtotalTransporteDeCarga, subtotalCorreoConvecional, total Como Real;<br>
+	
+//Datos de entrada<br>
+Escribir "cual es el costo unitario del equipo enviado por Mensajeria Express";<br>
+leer costoEquipoM;<br>
+escribir "cual es el costo unitario del equipo enviado por Transporte de carga";<br>
+leer costoEquipoT;<br>
+	
+//Proceso<br>
+subtotalMensajeriaExpress = costoEquipoM*4; <br>
+subtotalTransporteDeCarga = costoEquipoT*2;<br>
+subtotalCorreoConvecional = (costoEquipoM\*0.7)\*4;<br>
+total = subtotalCorreoConvecional + subtotalMensajeriaExpress + 
+subtotalTransporteDeCarga;<br>
+	
+//Datos de salida<br>
+escribir "El costo de los equipos enviados por mensajeria Express será $", subtotalMensajeriaExpress;
+
+Escribir "El costo de los equipos enviados por Transporte de carga será $", subtotalTransporteDeCarga;
+
+Escribir "El costo de los equipos enviados por Correo convencional sera $", subtotalCorreoConvecional;
+
+Escribir "El costo total de los equipos enviados sera $", total;
+	
+FinAlgoritmo
+#### **Codificación**
+**Código en c :**<br><!--Los saltos de linea (<br>) no estan incluidos en elpseudocodigo, son para mejorar la redaccion en el producto final-->
+
+  #include <stdio.h>
+  int main(){<br>
+
+  //def variables<br>
+  float costoEquipoM, costoEquipoT;<br>
+  float subtotalMensajeriaExpress, subtotalTransporteDeCarga, subtotalCorreoConvecional, total; <br>
+
+  //Datos de entrada<br>
+  printf ("Cual es el costo unitario del equipo enviado por Mensajeria Express\n");<br>
+  scanf ("%f", &costoEquipoM);<br>
+  printf ("Cual es el costo unitario del equipo enviado por Transporte de carga\n");<br>
+  scanf ("%f", &costoEquipoT);<br>
+
+  //Proceso<br>
+  subtotalMensajeriaExpress = costoEquipoM*4;<br>
+  subtotalTransporteDeCarga = costoEquipoT*2;<br>
+  subtotalCorreoConvecional = (costoEquipoM*0.7)*4;<br>
+  total= subtotalCorreoConvecional+subtotalMensajeriaExpress+subtotalTransporteDeCarga;<br>
+
+  //Datos de salida<br>
+  printf ("El costo de los equipos enviados por mensajeria Express sera $%.2f.\n", subtotalMensajeriaExpress);<br>
+  printf ("El costo de los equipos enviados por Transporte de carga sera $%.2f.\n", subtotalTransporteDeCarga);<br>
+  printf ("El costo de los equipos enviados por Correo convencional sera $%.2f.\n", subtotalCorreoConvecional);<br>
+  printf ("El costo total de los equipos enviados sera $%.2f.", total);<br>
+    
+  return 0;<br>
+}<br>
+#### **Validación**
+<!--PENDIENTE
+
+-->
+### **3. Principales dificultades**<br>
+
+Una de las mayores dificultades que enfrenté al inicio fue comprender que el diseño de algoritmos no es un proceso lineal. Requiere reescribir el código tras realizar un análisis más profundo, lo que permite simplificar la lógica y entender mejor el ejercicio. Gracias a las practicas tanto personales como en clase, logré reconocer patrones en los problemas, encontrando soluciones más sencillas para desafíos que inicialmente parecían complejos.
+
+### **4. Reflexion crítica**<br>
+La buena costumbre de realizar pruebas de escritorio son el pilar de la formacion, porque permite detectar fallos antes de la implementacion final. Entender que un programa es la ejecucion de una serie de pasos nos asegura que cada instruccion cumpla su respectivo proposito.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Unidad 2  (no aplica).
+
+## Unidad 3  (no aplica).
+
+## Conclusiones generales (no aplica).
+
+## Bibliografía (formato IEEE).
+
+[1] G. L. López Faicán, "Guía Didáctica de Teoría de la Programación", Universidad Nacional de Loja, Loja, Ecuador, 2026.
+
+[2] PSeInt, "Documentación oficial de PSeInt," 2021. [En línea]. Disponible en:
+http://pseint.sourceforge.net/
