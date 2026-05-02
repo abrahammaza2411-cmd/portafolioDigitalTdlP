@@ -4,8 +4,8 @@
 # **Portafolio Digital de Aprendizaje – Teoría de la Programación**
 ### **Universidad Nacional De Loja**
 ### **Facultad de la Energía, las Industrias y los Recursos Naturales no Renovables**
-### **Carrera de Computacion**
-### **Teoria de la Programacion**
+### **Carrera de Computación**
+### **Teoría de la Programación**
 ### **Docente: Ing. Lissette Geoconda López Faicán**
 ### **Estudiante: Abraham Daniel Maza Lapo**
 ### **Primer Ciclo**
@@ -17,11 +17,11 @@
 ### **Resolucion de Problemas**
 
 Resolver un problema real mediante la informática requiere seguir estos pasos: 
-  1. Análisis (identificar entradas, salidas y restricciones),
-  2. Diseño (pseudocódigo o diagramas),
-  3. Codificación (traducción a código fuente), 
-  4. Pruebas (eliminacion de errores) y 
-  5. Documentación/Mantenimiento
+  1. Análisis (identificar entradas, salidas y restricciones).
+  2. Diseño (pseudocódigo o diagramas).
+  3. Codificación (traducción a código fuente). 
+  4. Pruebas (eliminación de errores).
+  5. Documentación/Mantenimiento.
 
 
 
@@ -89,7 +89,7 @@ Funciona a través de mnemónicos o comandos como ADD, DIV y STR; este nivel req
 Más cercano al lenguaje natural humano para facilitar la programación. Se divide principalmente en dos tipos: los compilados (generan un archivo ejecutable previo a la ejecución, como C, C++ y Java) e interpretados (se ejecutan línea por línea a través de un intérprete, como es el caso de Python). Internamente, todos se traducen finalmente a lenguaje máquina para ser procesados.
 
 #### **f. Programación por bloques**
-La programación visual es un método diseñado para crear software mediante piezas gráficas o bloques que ejecutan comandos y funciones específicas. Es utilizado principalmente para introducir a principiantes y niños en este ámbito, ya que permite asimilar la lógica fundamental sin la barrera que supone una sintaxis compleja. Al eliminar las preocupaciones sobre errores de escritura, el estudiante puede concentrar sus esfuerzos en la arquitectura del algoritmo y en el flujo de control, estableciendo una base sólida de respeto por la estructura antes de dar el salto a los lenguajes de programación basados en texto.
+La programación visual es un método diseñado para crear software mediante piezas gráficas o bloques que ejecutan comandos y funciones específicas. Es utilizado principalmente para introducir a principiantes y niños en este ámbito, ya que permite asimilar la lógica fundamental sin la barrera que supone una sintaxis compleja. Al eliminar las preocupaciones sobre errores de escritura, el estudiante puede concentrar sus esfuerzos en la arquitectura del algoritmo y en el flujo de control, estableciendo una base sólida de entender la estructura antes de dar el salto a los lenguajes de programación basados en texto.
 
 <img width="964" height="600" alt="image" src="https://github.com/user-attachments/assets/e90e1ed4-6fc8-4010-ab6b-27ca903f2fec" />
 
@@ -132,7 +132,7 @@ Calcular el total sumando los subtotales, tal que: total= Subtotal1 + Subtotal2 
 Algoritmo presupuestoEnvio
 //Def variables
 definir costoEquipoM, costoEquipoT Como Real;
-definir subtotalMensajeriaExpress, subtotalTransporteDeCarga, subtotalCorreoConvecional, total Como Real;
+definir subtotalMensajeriaExpress, subtotalTransporteDeCarga, subtotalCorreoConvencional, total Como Real;
 	
 //Datos de entrada
 Escribir "cual es el costo unitario del equipo enviado por Mensajeria Express";<br>
@@ -143,8 +143,8 @@ leer costoEquipoT;
 //Proceso<br>
 subtotalMensajeriaExpress = costoEquipoM*4;
 subtotalTransporteDeCarga = costoEquipoT*2;
-subtotalCorreoConvecional = (costoEquipoM\*0.7)\*4;
-total = subtotalCorreoConvecional + subtotalMensajeriaExpress + 
+subtotalCorreoConvencional = (costoEquipoM\*0.7)\*4;
+total = subtotalCorreoConvencional + subtotalMensajeriaExpress + 
 subtotalTransporteDeCarga;
 	
 //Datos de salida
@@ -152,7 +152,7 @@ escribir "El costo de los equipos enviados por mensajeria Express será $", subt
 
 Escribir "El costo de los equipos enviados por Transporte de carga será $", subtotalTransporteDeCarga;
 
-Escribir "El costo de los equipos enviados por Correo convencional sera $", subtotalCorreoConvecional;
+Escribir "El costo de los equipos enviados por Correo convencional sera $", subtotalCorreoConvencional;
 
 Escribir "El costo total de los equipos enviados sera $", total;
 	
@@ -169,24 +169,24 @@ int main(){
 
   //def variables
   float costoEquipoM, costoEquipoT;
-  float subtotalMensajeriaExpress, subtotalTransporteDeCarga, subtotalCorreoConvecional, total;
+  float subtotalMensajeriaExpress, subtotalTransporteDeCarga, subtotalCorreoConvencional, total;
 
   //Datos de entrada
-  printf ("Cual es el costo unitario del equipo enviado por Mensajeria Express\n");
+  printf ("Cual es el costo unitario del equipo enviado por Mensajeria Express?\n");
   scanf ("%f", &costoEquipoM);
-  printf ("Cual es el costo unitario del equipo enviado por Transporte de carga\n");
+  printf ("Cual es el costo unitario del equipo enviado por Transporte de carga?\n");
   scanf ("%f", &costoEquipoT);
 
   //Proceso<br>
   subtotalMensajeriaExpress = costoEquipoM*4;
   subtotalTransporteDeCarga = costoEquipoT*2;
-  subtotalCorreoConvecional = (costoEquipoM*0.7)*4;
-  total= subtotalCorreoConvecional+subtotalMensajeriaExpress+subtotalTransporteDeCarga;
+  subtotalCorreoConvencional = (costoEquipoM*0.7)*4;
+  total= subtotalCorreoConvencional+subtotalMensajeriaExpress+subtotalTransporteDeCarga;
 
   //Datos de salida<br>
   printf ("El costo de los equipos enviados por mensajeria Express sera $%.2f.\n", subtotalMensajeriaExpress);
   printf ("El costo de los equipos enviados por Transporte de carga sera $%.2f.\n", subtotalTransporteDeCarga);
-  printf ("El costo de los equipos enviados por Correo convencional sera $%.2f.\n", subtotalCorreoConvecional);
+  printf ("El costo de los equipos enviados por Correo convencional sera $%.2f.\n", subtotalCorreoConvencional);
   printf ("El costo total de los equipos enviados sera $%.2f.", total);
     
   return 0;<br>
