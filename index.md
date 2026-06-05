@@ -196,8 +196,13 @@ int main(){
 | Entrada (Variables) | Proceso (Operaciones / Fórmulas) | Salida (Resultados Esperados) |
 | :--- | :--- | :--- |
 | **Costo Express:** `costoEquipoM` <br> **Costo Carga:** `costoEquipoT` | `subtotalExpress = costoEquipoM * 4` <br> `subtotalCarga = costoEquipoT * 2` <br> `subtotalConvencional = (costoEquipoM * 0.7) * 4` <br> `total = subtotalExpress + subtotalCarga + subtotalConvencional` | **El subtotal express es:** `subtotalExpress` <br> **El subtotal carga es:** `subtotalCarga` <br> **El subtotal convencional es:** `subtotalConvencional` <br> **El total es:** `total` |
-| **Costo Express:** $24.00 <br> **Costo Carga:** $52.00 | $96.00 = 24 * 4$ <br> $104.00 = 52 * 2$ <br> $67.20 = (24 * 0.7) * 4$ <br> $Total = 96 + 104 + 67.20$ | **El subtotal express es:** $96.00 <br> **El subtotal carga es:** $104.00 <br> **El subtotal convencional es:** $67.20 <br> **El total es:** $267.20 |
-| **Costo Express:** $12.80 <br> **Costo Carga:** $9.50 | $51.20 = 12.8 * 4$ <br> $19.00 = 9.5 * 2$ <br> $35.84 = (12.8 * 0.7) * 4$ <br> $Total = 51.20 + 19.00 + 35.84$ | **El subtotal express es:** $51.20 <br> **El subtotal carga es:** $19.00 <br> **El subtotal convencional es:** $35.84 <br> **El total es:** $106.04 |
+| **Entrada 1** <br> **Costo Express:** $24.00 <br> **Costo Carga:** $52.00 | $96.00 = 24 * 4$ <br> $104.00 = 52 * 2$ <br> $67.20 = (24 * 0.7) * 4$ <br> $Total = 96 + 104 + 67.20$ | **El subtotal express es:** $96.00 <br> **El subtotal carga es:** $104.00 <br> **El subtotal convencional es:** $67.20 <br> **El total es:** $267.20 |
+| **Entrada 2** <br> **Costo Express:** $12.80 <br> **Costo Carga:** $9.50 | $51.20 = 12.8 * 4$ <br> $19.00 = 9.5 * 2$ <br> $35.84 = (12.8 * 0.7) * 4$ <br> $Total = 51.20 + 19.00 + 35.84$ | **El subtotal express es:** $51.20 <br> **El subtotal carga es:** $19.00 <br> **El subtotal convencional es:** $35.84 <br> **El total es:** $106.04 | |
+##### **Comprobacion entrada 1** <br>
+<img width="655" height="203" alt="image" src="https://github.com/user-attachments/assets/9cb6b9e1-74c5-4de9-b3dc-bf50906f441e" /> <br> 
+##### **Comprobacion entrada 2** <br>
+<img width="652" height="198" alt="image" src="https://github.com/user-attachments/assets/e236eeb9-c942-44b9-a440-0a1f3a6cab7f" /> <br> 
+
 
 ### **3. Principales dificultades**<br>
 
