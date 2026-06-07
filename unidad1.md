@@ -1,4 +1,4 @@
-## [**Regresar al inicio**](index.md)
+
 
 ## **Unidad 1**
 
@@ -200,4 +200,4 @@ Una de las mayores dificultades que enfrenté al inicio fue comprender que el di
 ### **4. Reflexion crítica**<br>
 La buena costumbre de realizar pruebas de escritorio es el pilar de la formación, porque permite detectar fallos antes de la implementación final. Entender que un programa es la ejecución de una serie de pasos nos asegura que cada instrucción cumpla su respectivo propósito
 
-
+## [**Regresar al inicio**](index.md)
