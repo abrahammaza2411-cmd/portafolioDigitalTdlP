@@ -72,7 +72,7 @@ int main (){
         }else if (peso<50&&peso>-1){
             donantRech++;
             printf("El donante no cumple con el peso para la extraccion.\n");
-        }else if (peso == -1) {
+        }else{
             printf("Finalizado \n");
         }
     }while (bolsasRec<metaBolsas&&peso!=-1); 
