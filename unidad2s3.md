@@ -50,7 +50,7 @@ donantes rechazados: Contador de personas que no cumplieron el peso mínimo.
 
 ## **3. Diseño del algoritmo (diagrama de flujo)**
 
-<img width="4252" height="760" alt="Diagrama en blanco" src="https://github.com/user-attachments/assets/34124601-d28c-4248-87d1-3b3deac29254" /> <br>
+<img width="4272" height="736" alt="Diagrama en blanco" src="https://github.com/user-attachments/assets/2454da66-91fe-4817-814c-25e363e2f822" /> <br>
 
 ## **4. Codificación (código fuente)**
 ```
