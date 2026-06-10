@@ -4,8 +4,7 @@ Encontramos 2 conceptos necesarios para el entendimiento de las estructuras: <br
 Los contadores, cuyo valor incrementa sucesivamemnte de uno en uno gracias a una constante. Y los acumuladores, que almacena resultados dependiendo de una variable
 
 ## **Ciclo Mientras(while)**
-Permite ejecutar un bloque de codigo siempre y cuando se cumpla una condicion inicial
-
+Permite ejecutar un bloque de codigo siempre es útil cuando el número de repeticiones es variable o desconocido y depende de las entradas del usuario o de datos externos. Evalúa la condición antes de entrar al bloque; si la condición es falsa desde el inicio, el código dentro del bucle nunca se ejecuta.
 ### **en pseudocodigo:** <br>
 
 <img width="304" height="159" alt="image" src="https://github.com/user-attachments/assets/3a9b531d-7877-41b3-b8bb-7699c6dc4597" />  <br>
@@ -16,7 +15,7 @@ Permite ejecutar un bloque de codigo siempre y cuando se cumpla una condicion in
 
 
 ## **Ciclo Hacer...Mientras(Do...while)**
-
+Es muy similar a while, pero garantiza que el bloque de código se ejecutará al menos una vez. Esto ocurre porque evalúa la condición al final del ciclo y no al principio.
 ### **en pseudocodigo:** <br>
 <img width="426" height="285" alt="image18" src="https://github.com/user-attachments/assets/a45298a8-4d29-4f77-b0b3-f27dcb1f0e01" />  <br>
 ### **En diagrama de flujo:** <br>
@@ -24,6 +23,7 @@ Permite ejecutar un bloque de codigo siempre y cuando se cumpla una condicion in
 
 
 ## **Ciclo Para(For)**
+Es ideal cuando conoces exactamente cuántas repeticiones necesitas antes de ejecutar el programa. Agrupa la inicialización, la condición y la actualización del contador en una sola línea.
 
 ### **en pseudocodigo:** <br>
 <img width="756" height="320" alt="image24" src="https://github.com/user-attachments/assets/27995270-4ccc-4413-a6e3-180194495102" />  <br>
