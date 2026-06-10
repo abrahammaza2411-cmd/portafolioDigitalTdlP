@@ -56,11 +56,12 @@ donantes rechazados: Contador de personas que no cumplieron el peso mínimo.
 ```
 #include <stdio.h>
 int main (){ 
-    int peso, bolsasRec = 0, donantRech = 0, metaBolsas = 3;
+    int bolsasRec = 0, donantRech = 0, metaBolsas = 3;
+    float peso;
     do{ 
         do {
             printf ("Donante, porfavor ingrese su peso\n");
-            scanf ("%i", &peso);
+            scanf ("%f", &peso);
             if (peso < -1 || peso > 635) {
                 printf("El peso no es valido. Intente de nuevo.\n");
             }
@@ -83,6 +84,16 @@ int main (){
 
 ```
 ## **5. Validación (prueba de escritorio)**
+
+| Peso Bolsas | Recolectadas | Rechazadas | Meta | Pantalla / Estado |
+| :---: | :---: | :---: | :---: | :--- |
+| 72,5 | 1 | 0 | 3 | El donante cumple con el peso para la extraccion. |
+| 48 | 1 | 1 | 3 | El donante no cumple con el peso para la extraccion.|
+| 60 | 2 | 1 | 3 | El donante cumple con el peso para la extraccion. |
+| 55 | 3 | 1 | 3 | El donante cumple con el peso para la extraccion. <br> <br> 3 recolectadas y 1 rechazada | <br>
+
+<img width="493" height="299" alt="image" src="https://github.com/user-attachments/assets/742054b1-24b8-4e5f-ab3e-276348e60b77" /> <br>
+
 
 ## [**Regresar al Unidad 2**](unidad2.md)
 ## [**Regresar al inicio**](index.md)
