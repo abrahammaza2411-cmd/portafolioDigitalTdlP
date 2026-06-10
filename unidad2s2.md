@@ -9,7 +9,7 @@ Las estructuras repetitivas, también conocidas como ciclos o bucles, permiten e
 Antes de estudiar las estructuras repetitivas, es necesario comprender dos conceptos clave:
 
 ### **1. Contador**
-Un **contador** es una variable que incrementa su valor de forma sucesiva, generalmente de **uno en uno**, gracias a una operación de incremento (suma de una constante). Se utiliza para controlar cuántas veces se ejecuta un ciclo.
+Es una variable que incrementa su valor de forma sucesiva, generalmente de uno en uno, gracias a una operación de incremento (suma de una constante). Se utiliza para controlar cuántas veces se ejecuta un ciclo.
 
 **Ejemplo:**
 ```
@@ -20,7 +20,7 @@ Fin Mientras
 ```
 
 ### **2. Acumulador**
-Un **acumulador** es una variable que almacena y acumula resultados dependiendo de otra variable. A diferencia del contador que siempre suma 1, el acumulador suma valores variables. Se usa para calcular totales, promedios, sumas, etc.
+Es una variable que almacena y acumula resultados dependiendo de otra variable. A diferencia del contador que siempre suma 1, el acumulador suma valores variables. Se usa para calcular totales, promedios, sumas, etc.
 
 **Ejemplo:**
 ```
@@ -37,10 +37,10 @@ Imprimir suma
 ## **1. Ciclo Mientras (While)**
 
 ### **Definición:**
-Es el ciclo más flexible y fundamental. Permite ejecutar un bloque de código **mientras una condición sea verdadera**. Es especialmente útil cuando el número de repeticiones es **variable o desconocido** y depende de las entradas del usuario o de datos externos.
+Permite ejecutar un bloque de código mientras una condición sea verdadera. Es especialmente útil cuando el número de repeticiones es variable o desconocido y depende de las entradas del usuario o de datos externos.
 
 ### **Características:**
-- Evalúa la condición **ANTES** de cada iteración (al principio del ciclo)
+- Evalúa la condición antes de cada iteración (al principio del ciclo)
 - Cuando se desconoce cuántas repeticiones necesitas (ejemplo: leer datos hasta que el usuario ingrese 0)
 - Flexibilidad total sobre cuándo terminar el ciclo
 - Posibilidad de crear ciclos infinitos si la condición nunca se vuelve falsa
@@ -70,10 +70,10 @@ Fin Mientras
 ## **2. Ciclo Hacer...Mientras (Do...While)**
 
 ### **Definición:**
-Es muy similar a **while**, pero con una diferencia fundamental: **garantiza que el bloque de código se ejecutará al menos una vez**. Esto ocurre porque evalúa la condición **AL FINAL del ciclo** y no al principio.
+Es muy similar a while, pero con una diferencia fundamental: garantiza que el bloque de código se ejecutará al menos una vez. Esto ocurre porque evalúa la condición al final del ciclo y no al principio.
 
 ### **Características:**
-- Evalúa la condición **DESPUÉS** de cada iteración (al final del ciclo)
+- Evalúa la condición despues de cada iteración (al final del ciclo)
 - Se ejecuta mínimo una vez, aunque la condición sea falsa desde el inicio
 - Primero hace → luego pregunta si continúa
 - Para ciclos que necesitan ejecutarse al menos una vez
@@ -104,7 +104,7 @@ Mientras (numero != 0)
 ## **3. Ciclo Para (For)**
 
 ### **Definición:**
-Es el ciclo más compacto y ordenado. Es **ideal cuando conoces exactamente cuántas repeticiones necesitas** antes de ejecutar el programa. Agrupa la **inicialización**, la **condición** y la **actualización del contador** en una sola línea, lo que lo hace muy eficiente.
+Es el ciclo más compacto y ordenado. Es ideal cuando conoces exactamente cuántas repeticiones necesitas** antes de ejecutar el programa. Agrupa la inicialización, la condición y la actualización del contador en una sola línea, lo que lo hace muy eficiente.
 
 ### **Características:**
 - Similar a while, evalúa la condición antes de cada iteración
@@ -139,7 +139,7 @@ Fin Para
 ## **4. Anidamiento de estructuras repetitivas**
 
 ### **Definición:**
-El **anidamiento** consiste en colocar un ciclo (bucle interno) **dentro de otro ciclo** (bucle externo). El ciclo interno se ejecuta completamente por cada iteración del ciclo externo. Es muy útil para trabajar con matrices, tablas de multiplicar o procesamiento de datos multidimensionales.
+El anidamiento consiste en colocar un ciclo (bucle interno) dentro de otro ciclo (bucle externo). El ciclo interno se ejecuta completamente por cada iteración del ciclo externo. Es muy útil para trabajar con matrices, tablas de multiplicar o procesamiento de datos multidimensionales.
 
 ### **Características:**
 - El bucle interno se reinicia en cada iteración del bucle externo
@@ -169,8 +169,5 @@ Fin Para
 <img width="370" height="540" alt="image" src="https://github.com/user-attachments/assets/e2af1d87-8ced-4ec6-9eb4-3688008ad6b7" /> <br>
 
 
-
-
-## **Navegación:**
 - [**Regresar a Unidad 2**](unidad2.md)
 - [**Regresar al inicio**](index.md)
