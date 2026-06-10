@@ -50,9 +50,38 @@ donantes rechazados: Contador de personas que no cumplieron el peso mínimo.
 
 ## **3. Diseño del algoritmo (diagrama de flujo)**
 
+<img width="4252" height="760" alt="Diagrama en blanco" src="https://github.com/user-attachments/assets/34124601-d28c-4248-87d1-3b3deac29254" /> <br>
+
 ## **4. Codificación (código fuente)**
+```
+#include <stdio.h>
+int main (){ 
+    int peso, bolsasRec = 0, donantRech = 0, metaBolsas = 3;
+    do{ 
+        do {
+            printf ("Donante, porfavor ingrese su peso\n");
+            scanf ("%i", &peso);
+            if (peso < -1 || peso > 635) {
+                printf("El peso no es valido. Intente de nuevo.\n");
+            }
+        }while (peso>635||peso<-1);
 
+        if (peso>=50){
+            bolsasRec++;
+            printf ("El donante cumple con el peso para la extraccion.\n");
+        }else if (peso<50&&peso>-1){
+            donantRech++;
+            printf("El donante no cumple con el peso para la extraccion.\n");
+        }else if (peso == -1) {
+            printf("Finalizado \n");
+        }
+    }while (bolsasRec<metaBolsas&&peso!=-1); 
+    printf ("se Recolectaron %i bolsas y %i donantes fueron rechazados\n", bolsasRec, donantRech);
 
+    return 0;
+}
+
+```
 ## **5. Validación (prueba de escritorio)**
 
 ## [**Regresar al Unidad 2**](unidad2.md)
