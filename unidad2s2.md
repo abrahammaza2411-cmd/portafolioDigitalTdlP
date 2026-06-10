@@ -41,6 +41,8 @@ Consiste em conectar un bucle dentro de otro bucle
 
 ### **En diagrama de flujo:** <br>
 <img width="257" height="212" alt="image" src="https://github.com/user-attachments/assets/1248929b-a33c-43bd-9717-6d6a34f9cc1d" /> <br>
+<img width="370" height="540" alt="image" src="https://github.com/user-attachments/assets/e2af1d87-8ced-4ec6-9eb4-3688008ad6b7" />
+
 
 
 ## [**Regresar al Unidad 2**](unidad2.md)
