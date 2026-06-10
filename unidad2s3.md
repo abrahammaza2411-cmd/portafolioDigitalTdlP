@@ -55,10 +55,14 @@ donantes rechazados: Contador de personas que no cumplieron el peso mínimo.
 ## **4. Codificación (código fuente)**
 ```
 #include <stdio.h>
-int main (){ 
+int main (){
+    //Declarar variables
     int bolsasRec = 0, donantRech = 0, metaBolsas = 3;
     float peso;
-    do{ 
+
+    //inicio del bucle
+    do{
+        //Dato de entrada
         do {
             printf ("Donante, porfavor ingrese su peso\n");
             scanf ("%f", &peso);
@@ -66,7 +70,8 @@ int main (){
                 printf("El peso no es valido. Intente de nuevo.\n");
             }
         }while (peso>635||peso<-1);
-
+    
+        //Condiciones
         if (peso>=50){
             bolsasRec++;
             printf ("El donante cumple con el peso para la extraccion.\n");
@@ -76,7 +81,9 @@ int main (){
         }else{
             printf("Finalizado \n");
         }
-    }while (bolsasRec<metaBolsas&&peso!=-1); 
+    }while (bolsasRec<metaBolsas&&peso!=-1);
+
+    //dato de salida
     printf ("se Recolectaron %i bolsas y %i donantes fueron rechazados\n", bolsasRec, donantRech);
 
     return 0;
@@ -84,15 +91,25 @@ int main (){
 
 ```
 ## **5. Validación (prueba de escritorio)**
-
+### **Prueba 1**
 | Peso Bolsas | Recolectadas | Rechazadas | Meta | Pantalla / Estado |
 | :---: | :---: | :---: | :---: | :--- |
 | 72,5 | 1 | 0 | 3 | El donante cumple con el peso para la extraccion. |
 | 48 | 1 | 1 | 3 | El donante no cumple con el peso para la extraccion.|
 | 60 | 2 | 1 | 3 | El donante cumple con el peso para la extraccion. |
-| 55 | 3 | 1 | 3 | El donante cumple con el peso para la extraccion. <br> <br> 3 recolectadas y 1 rechazada | <br>
+| 55 | 3 | 1 | 3 | El donante cumple con el peso para la extraccion. <br>  3 recolectadas y 1 rechazada | <br>
 
-<img width="493" height="299" alt="image" src="https://github.com/user-attachments/assets/742054b1-24b8-4e5f-ab3e-276348e60b77" /> <br>
+<img width="466" height="224" alt="image" src="https://github.com/user-attachments/assets/fb7a6a11-861c-4651-b221-49b86bd79243" /> <br>
+
+### **Pueba 2**
+| Peso Bolsas | Recolectadas | Rechazadas | Meta | Pantalla / Estado |
+| :---: | :---: | :---: | :---: | :--- |
+| 80 | 1 | 0 | 3 | El donante cumple con el peso para la extraccion. |
+| 36 | 1 | 1 | 3 | El donante no cumple con el peso para la extraccion.|
+| -4 | 1 | 1 | 3 | El peso no es valido. Intente de nuevo. |
+| -1 | 1 | 1 | 3 | Finalizado <br> se Recolectaron 1 bolsas y 1 donantes fueron rechazados| <br>
+### **Pueba 2**
+
 
 
 ## [**Regresar al Unidad 2**](unidad2.md)
