@@ -5,6 +5,6 @@
 ## [**Estructuras repetitivas**](unidad2s2.md)
 
 
-## [**Ejercicio con estructura condicional y repetitiva**](unidad2s3.md)
+## [**Principales dificultades y reflexion critica**](unidad2s4.md)
 
 ## [**Regresar al inicio**](index.md)
