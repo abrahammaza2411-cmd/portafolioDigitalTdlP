@@ -1,7 +1,7 @@
 # **Estructuras repetitivas**
 Permiten ejecutar varias veces una serie de instrucciones, hasta que la condicion sea falsa.<br>
 Encontramos 2 conceptos necesarios para el entendimiento de las estructuras: <br>
-Los contadores, cuyo valor incrementa sucesivamemnte de uno en uno gracias a una constante. Y los acumuladores, que almacena resultados dependiendo de una variable
+Los **contadores**, cuyo valor incrementa sucesivamemnte de uno en uno gracias a una constante. Y los **acumuladores**, que almacena resultados dependiendo de una variable
 
 ## **Ciclo Mientras(while)**
 Permite ejecutar un bloque de codigo siempre es útil cuando el número de repeticiones es variable o desconocido y depende de las entradas del usuario o de datos externos. Evalúa la condición antes de entrar al bloque; si la condición es falsa desde el inicio, el código dentro del bucle nunca se ejecuta.
