@@ -21,6 +21,32 @@ El banco de sangre de un hospital requiere recolectar urgentemente 3 bolsas de s
 ### **Al final, el sistema mostrará cuántas donaciones fueron exitosas y cuántos voluntarios fueron rechazados por bajo peso.**
 
 ## **2. Análisis del problema**
+### **A. Datos de Entrada**
+peso: Número flotante o entero que representa el peso del donante (o -1 para finalizar).
+
+### **B. Datos de Salida**
+Mensajes en pantalla ("Donación autorizada" / "Donante no apto por bajo peso").
+
+bolsas_recolectadas: Contador de donaciones exitosas.
+
+donantes_rechazados: Contador de personas que no cumplieron el peso mínimo.
+
+### **C. Proceso y Lógica**
+- Inicializar: bolsasRec = 0, donantRech = 0, metaBolsas = 3.
+
+- Leer el primer peso.
+
+- Estructura Repetitiva (While): Mientras bolsas_recolectadas < META_BOLSAS Y peso != -1.
+
+- Estructura Condicional (If): Dentro del ciclo:
+
+    Si peso >= 50: Sumar 1 a bolsas_recolectadas.
+
+    Si no (menor a 50 pero diferente de -1): Sumar 1 a donantes_rechazados.
+
+- Si no se ha alcanzado la meta, solicitar el peso del siguiente voluntario.
+
+- Al salir del bucle, mostrar el reporte médico final.
 
 ## **3. Diseño del algoritmo (diagrama de flujo)**
 
