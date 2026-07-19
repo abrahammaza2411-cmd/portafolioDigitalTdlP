@@ -25,7 +25,7 @@
 
 * 📘 **[Unidad 1](unidad1.md)** — *Acceso a los contenidos y recursos de la primera unidad.*
 * 📗 **[Unidad 2](unidad2.md)** — *Acceso a los contenidos y recursos de la segunda unidad.*
-* ⚪ *[Unidad 3](unidad3.md)*
-* 🚫 *[Conclusiones generales](conclusiones.md)*
+* 📙 **[Unidad 3](unidad3.md)** — *Acceso a los contenidos y recursos de la tercera unidad.*
+* 🎯 **[Conclusiones generales](conclusiones.md)** — *Cierre y reflexiones sobre el aprendizaje del ciclo.*
 * 📚 **[Bibliografía](bibliografia.md)** — *Fuentes y referencias consultadas.*
 * 🤖 **[Declaración de uso de la IA generativa](decUsoIA.md)** — *Transparencia y uso ético de herramientas.*
