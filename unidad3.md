@@ -195,29 +195,39 @@ Fin Para
 
 **Ejemplo práctico: Flota de drones de reparto**
 
-Durante un vuelo, el dron reporta su altitud cada minuto. Es una sola secuencia de datos en el tiempo, para un único dron: por eso basta un arreglo de una dimensión.
+Durante un vuelo, el dron reporta su altitud cada minuto. Es una sola secuencia de datos en el tiempo, para un único dron: por eso basta un arreglo de una dimensión. Además de guardar la bitácora, el programa **calcula el promedio de vuelo** y **detecta automáticamente** en qué minutos se superó el límite legal de altitud (120 m), recorriendo el arreglo una segunda vez para comparar cada valor.
 
 ```c
 #include <stdio.h>
 
 int main() {
-    int altitudes[5];   // Altitud del dron, minuto a minuto (5 minutos de vuelo)
+    int altitudes[5];          // Altitud del dron, minuto a minuto (5 minutos de vuelo)
     int altitudMaxima = 0;
+    int sumaAltitudes = 0;
+    const int LIMITE_LEGAL = 120;   // Altitud maxima permitida por normativa (metros)
 
     for (int i = 0; i < 5; i++) {
         printf("Altitud minuto %d (m): ", i + 1);
         scanf("%d", &altitudes[i]);
+
+        sumaAltitudes += altitudes[i];
         if (altitudes[i] > altitudMaxima) {
             altitudMaxima = altitudes[i];
         }
     }
 
-    printf("\nBitacora de vuelo: ");
+    printf("\nBitacora de vuelo:\n");
     for (int i = 0; i < 5; i++) {
-        printf("%d ", altitudes[i]);
+        printf("  Minuto %d: %d m", i + 1, altitudes[i]);
+        if (altitudes[i] > LIMITE_LEGAL) {
+            printf("  <-- ALERTA: excede el limite de %d m", LIMITE_LEGAL);
+        }
+        printf("\n");
     }
 
+    float promedio = (float) sumaAltitudes / 5;
     printf("\nAltitud maxima alcanzada: %d m\n", altitudMaxima);
+    printf("Altitud promedio del vuelo: %.2f m\n", promedio);
 
     return 0;
 }
@@ -249,12 +259,15 @@ Fin Para
 
 **Ejemplo práctico**
 
+Además de registrar el estado de cada dron y avisar si su batería es crítica, el programa **recorre la columna de batería de la matriz** para determinar cuál dron tiene la carga más baja y así decidir cuál debe regresar primero a la base.
+
 ```c
 #include <stdio.h>
 
 int main() {
     // flota[dron][parametro] -> 3 drones, 3 parametros (bateria, altitud, velocidad)
     float flota[3][3];
+    int droneMenorBateria = 0;
 
     for (int d = 0; d < 3; d++) {
         printf("Dron %d - Bateria (%%): ", d + 1);
@@ -263,6 +276,10 @@ int main() {
         scanf("%f", &flota[d][1]);
         printf("Dron %d - Velocidad (km/h): ", d + 1);
         scanf("%f", &flota[d][2]);
+
+        if (flota[d][0] < flota[droneMenorBateria][0]) {
+            droneMenorBateria = d;
+        }
     }
 
     printf("\nEstado de la flota:\n");
@@ -273,6 +290,9 @@ int main() {
             printf("  ALERTA: bateria critica en Dron %d\n", d + 1);
         }
     }
+
+    printf("\nPrioridad de regreso a base: Dron %d (bateria mas baja: %.1f%%)\n",
+           droneMenorBateria + 1, flota[droneMenorBateria][0]);
 
     return 0;
 }
@@ -307,8 +327,11 @@ Fin Para
 
 **Ejemplo práctico**
 
+Cada dron guarda una ruta de 3 waypoints con coordenadas (lat, lon, alt). Ademas de mostrar la ruta, el programa **calcula la distancia total recorrida** por cada dron: por cada dron recorre sus waypoints y, a partir del segundo, obtiene la diferencia con el waypoint anterior en cada coordenada y la acumula con la fórmula de distancia euclidiana (`sqrt`). Esto usa las tres dimensiones del arreglo a la vez: dron, waypoint y coordenada.
+
 ```c
 #include <stdio.h>
+#include <math.h>
 
 int main() {
     // rutas[dron][waypoint][coordenada] -> 2 drones, 3 waypoints, 3 coordenadas (lat, lon, alt)
@@ -328,10 +351,21 @@ int main() {
     printf("\nRutas de la flota:\n");
     for (int d = 0; d < 2; d++) {
         printf("Dron %d:\n", d + 1);
+        float distanciaTotal = 0;
+
         for (int w = 0; w < 3; w++) {
             printf("  Waypoint %d -> lat:%.4f lon:%.4f alt:%.1fm\n",
                    w + 1, rutas[d][w][0], rutas[d][w][1], rutas[d][w][2]);
+
+            if (w > 0) {
+                float dLat = rutas[d][w][0] - rutas[d][w - 1][0];
+                float dLon = rutas[d][w][1] - rutas[d][w - 1][1];
+                float dAlt = rutas[d][w][2] - rutas[d][w - 1][2];
+                distanciaTotal += sqrt(dLat * dLat + dLon * dLon + dAlt * dAlt);
+            }
         }
+
+        printf("  Distancia total estimada de la ruta: %.2f (unidades)\n", distanciaTotal);
     }
 
     return 0;
